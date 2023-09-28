@@ -1,0 +1,20 @@
+# step 1:
+# Create a virtual environment in the terminal
+# If you choose to create a virtual environment manually, use the following command (where ".venv" is the name of the environment folder):
+
+# macOS/Linux
+# You may need to run `sudo apt-get install python3-venv` first on Debian-based OSs
+python3 -m venv .venv
+
+# Windows
+# You can also use `py -3 -m venv .venv`
+python -m venv .venv
+
+# step 2:
+# activate venv and run the command in terminal:
+source ./.venv/bin/activate
+pip install openpyxl
+
+# step 3(not neccessary):
+# you can view package you installed with the command:
+pip3 freeze > requirements.txt 
